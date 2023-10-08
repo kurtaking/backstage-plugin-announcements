@@ -30,7 +30,7 @@
     "postpack": "backstage-cli package postpack"
   },
   "dependencies": {
-    "@backstage/backend-common": "^0.19.0",
+    "@backstage/backend-common": "^0.19.7",
     "@backstage/config": "^1.0.8",
     "@backstage/core-plugin-api": "^1.5.2",
     "@backstage/errors": "^1.2.0",
