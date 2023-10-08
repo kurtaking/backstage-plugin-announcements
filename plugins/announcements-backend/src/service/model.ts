@@ -4,6 +4,7 @@ export type Announcement = {
   id: string;
   type?: 'info' | 'warning' | 'error';
   category?: Category;
+  sticky?: boolean;
   publisher: string;
   title: string;
   excerpt: string;

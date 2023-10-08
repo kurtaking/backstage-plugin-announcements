@@ -5,11 +5,10 @@ import { identityApiRef, useApi } from '@backstage/core-plugin-api';
 import {
   Button,
   CircularProgress,
-  FormControl,
-  FormHelperText,
-  InputLabel,
+  FormControlLabel,
+  FormGroup,
   makeStyles,
-  Select,
+  Switch,
   TextField,
 } from '@material-ui/core';
 import {
@@ -56,10 +55,13 @@ export const AnnouncementForm = ({
   );
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const key = event.target.id ?? event.target.name;
+    let value: string | boolean = event.target.value;
+    if (event.target.id === 'sticky') {
+      value = event.target.checked;
+    }
     setForm({
       ...form,
-      [key]: event.target.value,
+      [event.target.id]: value,
     });
   };
 
@@ -155,6 +157,20 @@ export const AnnouncementForm = ({
           style={{ minHeight: '30rem' }}
           onChange={value => setForm({ ...form, ...{ body: value || '' } })}
         />
+        <FormGroup row>
+          <FormControlLabel
+            control={
+              <Switch
+                checked={form.sticky}
+                onChange={handleChange}
+                id="sticky"
+                color="primary"
+              />
+            }
+            label="Sticky announcement"
+            labelPlacement="start"
+          />
+        </FormGroup>
         <Button
           variant="contained"
           color="primary"

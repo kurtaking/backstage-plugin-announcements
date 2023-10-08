@@ -8,6 +8,7 @@ type AnnouncementUpsert = {
   id: string;
   type?: 'info' | 'warning' | 'error';
   category?: string;
+  sticky?: boolean;
   publisher: string;
   title: string;
   excerpt: string;
@@ -19,6 +20,7 @@ export type DbAnnouncement = {
   id: string;
   type?: 'info' | 'warning' | 'error';
   category?: string;
+  sticky?: boolean;
   publisher: string;
   title: string;
   excerpt: string;
@@ -65,6 +67,7 @@ const announcementUpsertToDB = (
     type: announcement.type,
     category: announcement.category,
     title: announcement.title,
+    sticky: announcement.sticky,
     excerpt: announcement.excerpt,
     body: announcement.body,
     publisher: announcement.publisher,
@@ -85,6 +88,7 @@ const DBToAnnouncementWithCategory = (
             title: announcementDb.category_title,
           }
         : undefined,
+    sticky: announcementDb.sticky,
     title: announcementDb.title,
     excerpt: announcementDb.excerpt,
     body: announcementDb.body,
@@ -118,9 +122,11 @@ export class AnnouncementsDatabase {
         'excerpt',
         'body',
         'category',
+        'sticky',
         'created_at',
         'categories.title as category_title',
       )
+      .orderBy('sticky', 'desc')
       .orderBy('created_at', 'desc')
       .leftJoin('categories', 'announcements.category', 'categories.slug');
 
@@ -152,6 +158,7 @@ export class AnnouncementsDatabase {
         'excerpt',
         'body',
         'category',
+        'sticky',
         'created_at',
         'categories.title as category_title',
       )
