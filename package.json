@@ -29,19 +29,19 @@
     ]
   },
   "devDependencies": {
-    "@backstage/cli": "^0.22.8",
-    "@changesets/cli": "^2.18.0",
-    "@spotify/prettier-config": "^12.0.0",
+    "@backstage/cli": "^0.22.13",
+    "@changesets/cli": "^2.26.2",
+    "@spotify/prettier-config": "^15.0.0",
     "@types/webpack": "^5.28.3",
-    "concurrently": "^7.0.0",
-    "husky": "^8.0.0",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.4.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router": "^6.3.0",
-    "react-router-dom": "^6.3.0",
-    "typescript": "~5.0.0"
+    "concurrently": "^8.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.16.0",
+    "react-router-dom": "^6.16.0",
+    "typescript": "~5.2.2"
   },
   "prettier": "@spotify/prettier-config",
   "lint-staged": {
