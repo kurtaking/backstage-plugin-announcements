@@ -35,7 +35,7 @@
     "@backstage/core-plugin-api": "^1.5.2",
     "@backstage/errors": "^1.2.0",
     "@backstage/plugin-auth-node": "^0.2.15",
-    "@backstage/plugin-permission-common": "^0.7.6",
+    "@backstage/plugin-permission-common": "^0.7.8",
     "@backstage/plugin-permission-node": "^0.7.9",
     "@backstage/plugin-search-common": "^1.2.4",
     "@k-phoen/backstage-plugin-announcements-common": "^0.0.7",
