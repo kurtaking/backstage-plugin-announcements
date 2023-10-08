@@ -5,9 +5,12 @@ import { identityApiRef, useApi } from '@backstage/core-plugin-api';
 import {
   Button,
   CircularProgress,
+  FormControl,
   FormControlLabel,
   FormGroup,
+  FormHelperText,
   makeStyles,
+  Select,
   Switch,
   TextField,
 } from '@material-ui/core';
@@ -96,13 +99,14 @@ export const AnnouncementForm = ({
           fullWidth
           required
         />
-        <FormControl className={classes.formControl}>
+        <FormControl className={classes.formRoot}>
           <Select
             id="type"
             name="type"
             defaultValue="info"
             variant="outlined"
             value={form.type ?? 'info'}
+            // @ts-ignore
             onChange={handleChange}
           >
             <MenuItem value="info">Info</MenuItem>
