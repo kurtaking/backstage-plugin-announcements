@@ -1,5 +1,11 @@
 # @kurtaking/backstage-plugin-announcements-common
 
+## 0.1.0
+
+### Minor Changes
+
+- 1114ad6: publish 0.1.0 version
+
 ## 0.0.7
 
 ### Patch Changes
