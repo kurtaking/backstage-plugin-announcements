@@ -4698,7 +4698,7 @@ __metadata:
     express: ^4.17.1
     express-promise-router: ^4.1.0
     knex: ^2.0.0
-    luxon: ^3.2.0
+    luxon: ^3.4.3
     msw: ^1.0.0
     node-fetch: ^2.6.7
     slugify: ^1.6.6
@@ -4742,11 +4742,11 @@ __metadata:
     "@testing-library/jest-dom": ^5.10.1
     "@testing-library/react": ^12.1.3
     "@testing-library/user-event": ^14.5.1
-    "@types/luxon": ^3.2.0
+    "@types/luxon": ^3.3.2
     "@types/node": ^16.11.26
     "@uiw/react-md-editor": ^3.19.5
     cross-fetch: ^3.1.5
-    luxon: ^3.2.0
+    luxon: ^3.4.3
     msw: ^1.0.0
     react-use: ^17.2.4
   peerDependencies:
@@ -7090,7 +7090,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/luxon@npm:^3.0.0, @types/luxon@npm:^3.2.0, @types/luxon@npm:~3.3.0":
+"@types/luxon@npm:^3.0.0, @types/luxon@npm:^3.3.2, @types/luxon@npm:~3.3.0":
   version: 3.3.2
   resolution: "@types/luxon@npm:3.3.2"
   checksum: b9111132720eae0269538872a5a496b29587ecfc8edc3b0ff7d269aa93a5ff00a131b23d1e9d1f12ec39f2c779ad21bd8d9f90b122c85a182771aabde7f676b8
@@ -16347,7 +16347,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luxon@npm:^3.0.0, luxon@npm:^3.2.0":
+"luxon@npm:^3.0.0, luxon@npm:^3.4.3":
   version: 3.4.3
   resolution: "luxon@npm:3.4.3"
   checksum: 3eade81506224d038ed24035a0cd0dd4887848d7eba9361dce9ad8ef81380596a68153240be3988721f9690c624fb449fcf8fd8c3fc0681a6a8496faf48e92a3
