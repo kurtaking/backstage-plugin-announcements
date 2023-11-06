@@ -4744,7 +4744,7 @@ __metadata:
     "@testing-library/user-event": ^14.5.1
     "@types/luxon": ^3.3.2
     "@types/node": ^16.11.26
-    "@uiw/react-md-editor": ^3.19.5
+    "@uiw/react-md-editor": ^3.25.2
     cross-fetch: ^3.1.5
     luxon: ^3.4.3
     msw: ^1.0.0
@@ -7643,9 +7643,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uiw/react-markdown-preview@npm:^4.1.14":
-  version: 4.1.16
-  resolution: "@uiw/react-markdown-preview@npm:4.1.16"
+"@uiw/react-markdown-preview@npm:^4.2.1":
+  version: 4.2.2
+  resolution: "@uiw/react-markdown-preview@npm:4.2.2"
   dependencies:
     "@babel/runtime": ^7.17.2
     "@uiw/copy-to-clipboard": ~1.0.12
@@ -7662,22 +7662,22 @@ __metadata:
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 348330674ab7e617ba19ee4001f4e2ac379d6eba5086472bc0f980d883850f0495e58afb73a940617521d8f049fb2429a9e1e2dd9090cb8250c40d3bb0c8ed4d
+  checksum: 9c74a53787545ab535e3cb587916c02832f6bfb8263268cda140427e848e6a69cd5995a083a1b57170845ff65b89993301197a1dbb9c0f4cd1b5f518d3084144
   languageName: node
   linkType: hard
 
-"@uiw/react-md-editor@npm:^3.19.5":
-  version: 3.23.6
-  resolution: "@uiw/react-md-editor@npm:3.23.6"
+"@uiw/react-md-editor@npm:^3.25.2":
+  version: 3.25.2
+  resolution: "@uiw/react-md-editor@npm:3.25.2"
   dependencies:
     "@babel/runtime": ^7.14.6
-    "@uiw/react-markdown-preview": ^4.1.14
+    "@uiw/react-markdown-preview": ^4.2.1
     rehype: ~12.0.1
     rehype-prism-plus: ~1.6.1
   peerDependencies:
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 9d97bc9e4a0b0c885fe0974b0f9ea58a1a6a05cebacb2b85587e034c7abd51c371608a8835c5f3b097c296013483ed9854e3665eb06cb009516206bee25faa7f
+  checksum: 0ca3726bc392f18d40695885ca030d21e0ad4092b3c2f21568438eaf6856c780521daec0775c05bd98725316a9f61a517860d3cf3aeed3c2e4273f4f3785242e
   languageName: node
   linkType: hard
 
